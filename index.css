@@ -1,0 +1,125 @@
+body {
+    align-items: center;
+    text-align: center;
+    background-image: url("img/rainbow.gif");
+  }
+h1{
+    color: white;
+    text-align: center; 
+}
+span { 
+    background-color: rgb(0, 0, 0); 
+}
+  p {
+    color: rgb(255, 255, 255);
+  }
+  h2{
+    color: white;
+    text-align: center; 
+}
+ul{
+    color: white;
+    text-align: center; 
+}
+ol{
+    color: white;
+    text-align: center; 
+}
+a{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+.carousel {
+    position: relative;
+    text-align: center;
+}
+
+.carousel .pre {
+    position: absolute;
+    top: 0;
+}
+
+.carousel .change_outer {
+    position: relative;
+    left: 0%;
+    text-align: center;
+    height: 120px;
+    overflow: hidden;
+
+   
+}
+
+.carousel .change_outer .change_inner {
+    position: relative;
+    -webkit-animation: rotate 10s ease-in-out infinite;
+    animation: rotate 10s ease-in-out infinite;
+}
+
+.carousel .change_outer .element {
+    display: block;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px var(--color);
+}
+
+@-webkit-keyframes rotate {
+
+    0%,
+    20% {
+        transform: translateY(0);
+    }
+
+    25%,
+    45% {
+        transform: translateY(-150px);
+    }
+
+    50%,
+    70% {
+        transform: translateY(-300px);
+    }
+
+    75%,
+    95% {
+        transform: translateY(-450px);
+    }
+
+    100% {
+        transform: translateY(-600px);
+    }
+}
+
+@keyframes rotate {
+
+    0%,
+    20% {
+        transform: translateY(0);
+    }
+
+    25%,
+    45% {
+        transform: translateY(-150px);
+    }
+
+    50%,
+    70% {
+        transform: translateY(-300px);
+    }
+
+    75%,
+    95% {
+        transform: translateY(-450px);
+    }
+
+    100% {
+        transform: translateY(-600px);
+    }
+}
+
+.rbutton{
+    position: absolute;
+    right: 43%;
+    bottom:10vh;
+    transform: scale(1.7);
+}
